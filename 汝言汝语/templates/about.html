@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>汝言汝语 · 关于</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">汝言汝语</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">首页</a></li>
+                <li><a href="/about" class="nav-link active">关于</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-container about-page">
+        <div class="about-content">
+            <!-- 关于标题 - 只使用首页Logo字体样式 -->
+            <h1 class="about-title">关于</h1>
+
+            <!-- 汝城与汝城话 -->
+            <div class="about-card">
+                <h2>汝城与汝城话</h2>
+                <p>
+                   汝城县位于湖南省东南部，东邻江西崇义，南接广东乐昌、仁化，西毗本省宜章，北连本省桂东、资兴。
+                </p>
+                <p>
+                   汝城话，即以县政府驻地卢阳镇为代表的全县通行语言，其在语言分类上系属：岭东语汝桂片。
+                </p>
+                <!-- 图片 -->
+                <div class="about-image-wrapper">
+                    <img src="{{ url_for('static', filename='images/汝城方言分布.jpg') }}" alt="汝城方言分布图" class="about-image">
+                    <p class="image-caption">汝城方言分布图</p>
+                </div>
+            </div>
+
+            <!-- 原有功能说明保留 -->
+            <div class="about-card">
+                <h2>功能说明</h2>
+                <ul class="feature-list">
+                    <li>
+                        <strong>查询汉字</strong>
+                        <p>输入汉字，显示所有读音和释义，支持多个汉字同时查询。</p>
+                    </li>
+                    <li>
+                        <strong>反查释义</strong>
+                        <p>输入关键词，在所有释义中检索相关内容。</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="about-card">
+                <h2>数据来源</h2>
+                <p>汝城方言字表2026/06/20.xlsx</p>
+            </div>
+
+            <div class="about-card">
+                <h2>制作人员</h2>
+                <p>@Varesa、@Deepseek</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>汝言汝语 · 2026</p>
+    </footer>
+</body>
+</html>
